@@ -1,0 +1,27 @@
+<?php
+	return array(
+		'Manage slider' => 'Управление слайдером',
+		'Add slider'	=> 'Добавить изображение',
+		'Delete slider' => 'Удалить изображение',
+		'Edit slider'	=> 'Редактировать изображение',
+		'Editing slider'	=> 'Редактирование изображения',
+		'The file was larger than {size}MB. Please upload a smaller file.' => 'Размер файла больше, чем {size} Mb. Пожалуйста, загрузите файл меньшего размера.',
+		'Add image'		=> 'Добавить запись',
+		'Image title'	=> 'Заголовок изображения',
+		'Choose file'	=> 'Выберите изображениe',
+		'Image url'		=> 'Ссылка изображения',
+		'Date updated'	=> 'Дата изменения',
+		'active'		=> 'Статус',
+		'Move item up'	=> 'Переместить элемент вверх',
+		'Move item down'	=> 'Переместить элемент вниз',
+		'Image succesfullty added to slider.' => 'Изображение успешно добавлено в слайдер',
+		'Supported file: {supportExt}.' => 'Поддерживаемый тип файлов: {supportExt}.',
+		'Upload file'	=> 'Загрузить файл',
+		'Add'			=> 'Добавить',
+		'Save'			=> 'Сохранить',
+		'Image'			=> 'Изображение',
+		'Are you sure you want to delete this item?' => 'Вы уверены, что хотите удалить этот элемент?',
+		'Use Philips Ambilight effect' => 'Использовать эффект Philips Ambilight',
+		'Note: This option is only available if PHP is compiled with bundled support for GD library, becouse use imagefilter php function.' => 'Замечание: Эта опция доступна, только если РНР скомпилирован со встроенной поддержкой библиотеки GD, так как используется PHP функция imagefilter.',
+	);
+?>
