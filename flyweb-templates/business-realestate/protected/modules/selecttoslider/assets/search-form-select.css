@@ -1,0 +1,10 @@
+.rooms-search-select { width: 244px; float: left; position: relative; top: 10px;}
+.floor-search-select { width: 244px; float: left; position: relative; top: 10px;}
+.square-search-select { width: 244px; float: left; position: relative; top: 10px;}
+
+.price-search-select { width: 180px; float: left; position: relative; top: 10px; }
+
+.vals .left {color: #333333; float: left; font-size: 12px;}
+.vals .right {color: #333333; float: right; font-size: 12px;}
+
+.slider-price-currency {float: right; color: #333333; position: relative; top: 3px; right: -5px;}
