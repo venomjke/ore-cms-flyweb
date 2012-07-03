@@ -35,7 +35,7 @@ class MainController extends ModuleAdminController {
 				$model->path->saveAs(Yii::app()->basePath.'/../uploads/slider/'.$model->path);
 				
 				$image = new Image(Yii::app()->basePath.'/../uploads/slider/'.$model->path);
-				$image->resize(640,290,Image::NONE)->quality(100)->save(Yii::app()->basePath.'/../uploads/slider/'.$model->path);
+				$image->resize(570,290,Image::NONE)->quality(100)->save(Yii::app()->basePath.'/../uploads/slider/'.$model->path);
 				$this->redirect(array('admin'));
 			}
 		}

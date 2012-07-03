@@ -21,8 +21,10 @@
     Недвижимость в Санкт Петербурге <div class="clear"></div>
   </div>
 <div class="menu">
-  <div class="socialki"><img src="/images/socialki.png" /> </div>  
+  <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+  <div class="socialki yashare-auto-init" data-yashareL10n="ru" data-yashareType="button" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir"></div>
   <ul id="nav">
+    <li><a href="/booking/main/mainform" class="fancy">Оставить заявку</a></li>
     <li><a href="/contactform/main/index">Связаться с нами</a></li>
   </ul>
 
@@ -75,6 +77,22 @@
         });
     ', CClientScript::POS_READY);
     ?>
+  
+  <?php if(Yii::app()->user->getState('isAdmin')){  
+    
+      Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/tooltip/jquery.tipTip.minified.js', CClientScript::POS_END);
+      Yii::app()->clientScript->registerScript('adminMenuToolTip', '
+        $(function(){
+          $(".adminMainNavItem").tipTip({maxWidth: "auto", edgeOffset: 10, delay: 200});
+        });
+      ', CClientScript::POS_READY);
+    ?>
+      <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/tooltip/tipTip.css" />
+
+      <div class="admin-menu-small" onclick="location.href='<?php echo Yii::app()->request->baseUrl; ?>/apartments/backend/main/admin'" style="cursor: pointer;">
+        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/adminmenu/administrator.png" alt="<?php echo Yii::t('common','Administration'); ?>" title="<?php echo Yii::t('common','Administration'); ?>" class="adminMainNavItem" />    
+      </div>
+    <?php } ?>
 
 </body>
 </html>

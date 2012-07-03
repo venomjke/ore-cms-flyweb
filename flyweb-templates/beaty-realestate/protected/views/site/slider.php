@@ -5,7 +5,7 @@
       $images = $Slider->getAllImages();
       foreach($images as $image):
       ?>
-      <img src="<?php echo Yii::app()->request->baseUrl; ?>/uploads/slider/<?php echo $image->path; ?>" alt="<?php echo $image->title; ?>" <?php echo (!empty($image->title) or !empty($image->descr))?'title="#title-'.$image->id.'"':""; ?> width="628" height="288" />
+      <img src="<?php echo Yii::app()->request->baseUrl; ?>/uploads/slider/<?php echo $image->path; ?>" alt="<?php echo $image->title; ?>" <?php echo (!empty($image->title) or !empty($image->descr))?'title="#title-'.$image->id.'"':""; ?> width="500" height="288" />
       <?php
       endforeach;
   } 

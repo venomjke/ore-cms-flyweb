@@ -183,7 +183,7 @@ img.logo {
 .slider_box .anons {
 	text-align: left;
 	float: right;
-	width: 310px;
+	width: 440px;
 }
 .slider_box .anons h2 {
 	font-size: 20px;
@@ -413,3 +413,4 @@ ul.apartment-description-ul li > span{ color: #000000;}
 div.column1 {}
 div.column2 { width: 460px; float: left;}
 div.column3 { width: 306px; float: left;}
+.admin-menu-small {  position: fixed;top: 10px; width: 50px; padding: 0px 10px 15px 10px; }
