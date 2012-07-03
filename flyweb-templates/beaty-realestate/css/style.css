@@ -1,0 +1,415 @@
+@charset "utf-8";
+body {
+	font-size: 14px;
+	background-image: url(../images/bg_body.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+	color: #333333;
+}
+a {
+	color: #A43737;
+}
+.content  h1, .content  h2{
+	font-size: 20px;
+	color: #A43737;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 6px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.content p {
+	text-align: justify;
+	margin-top: 6px;
+	margin-right: 10px;
+	margin-bottom: 6px;
+	margin-left: 10px;
+}
+
+div.clear {
+	clear: both;
+	height: 0px;
+}
+.shapka {
+	width: 932px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: right;
+	color: #a43737;
+	font-size: 19px;
+	font-weight: bold;
+	height: 70px;
+	margin-top: 30px;
+	clear: both;
+}
+img.logo {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	float: left;
+	margin-top: 20px;
+}
+.menu  {
+	width: 952px;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	-moz-border-radius:10px 10px 10px 10px;
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: #fccdb6;
+	padding-top: 8px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+	padding-left: 4px;
+	margin-bottom: 6px;
+}
+.menu .socialki {
+	float: left;
+	margin-left: 10px;
+}
+
+.menu #nav {
+	padding: 0px;
+	float: right;
+	width: 580px;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.menu #nav li {
+	float: right;
+	list-style-type: none;
+}
+.menu #nav a {
+	display: block;
+	padding-right: 8px;
+	padding-left: 8px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #A43737;
+	color: #A43737;
+	text-decoration: none;
+}
+.menu #nav a:hover{
+	text-decoration: underline;
+}
+.menu #nav li:first-child a{
+	border-right-style: none;
+
+}.menu #dropDownNav {
+	background-image: url(../images/bg_menu.png);
+	background-repeat: repeat-x;
+	height: 38px;
+	overflow: hidden;
+	display: block;
+	border-radius:6px 6px 6px 6px;
+	-webkit-border-radius:6px 6px 6px 6px;
+	-moz-border-radius:6px 6px 6px 6px;
+	margin-top: 6px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+.menu #dropDownNav li {
+	float: left;
+	list-style-type: none;
+}
+.menu #dropDownNav a {
+	display: table-cell;
+	height: 38px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	padding-right: 13px;
+	padding-left: 13px;
+	color: #ff9999;
+	font-size: 15px;
+	font-weight: normal;
+	text-decoration: none;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #330909;
+}
+.menu #dropDownNav li:first-child a {
+	border-left-style: none;
+}
+.menu #dropDownNav a:hover {
+	color: #ffc3c3;
+	background-color: #3B0A0A;
+}
+.menu #dropDownNav li.curent a {
+	color: #ffffff;
+}
+
+.slider_box {
+	height: 288px;
+	width: 948px;
+	margin-right: auto;
+	margin-bottom: 6px;
+	margin-left: auto;
+	padding: 6px;
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+	border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	-moz-border-radius:10px 10px 10px 10px;
+}
+.slider_box .zaglushka {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1000;
+}
+.slider_box .slider {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	height: 288px;
+}
+.slider_box .anons {
+	text-align: left;
+	float: right;
+	width: 310px;
+}
+.slider_box .anons h2 {
+	font-size: 20px;
+	color: #A43737;
+	margin-top: 4px;
+	margin-bottom: 0px;
+}
+.slider_box .anons a {
+	display: block;
+	color: #666666;
+	text-decoration: none;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin: 0px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999999;
+}
+.slider_box .anons h3 {
+	color: #333333;
+	font-size: 16px;
+	line-height: 14px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.slider_box .anons p {
+	font-size: 12px;
+	line-height: 13px;
+	margin-top: 2px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+
+}
+.slider_box .anons a:hover p {
+	text-decoration: underline;
+}
+
+.content {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+ /*классы для формы поиска*/
+ 
+.filtr {
+	border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	-moz-border-radius:10px 10px 10px 10px;
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 8px;
+	padding-bottom: 8px;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width:960px;
+}
+
+.poiskpolosa .poiskcentr .form {
+	float: left;
+	width: 372px;
+	margin-left: 8px;
+	
+}
+
+
+div.header-form-line {
+	height: 30px;
+	padding-top: 12px;
+	float: left;
+	width: 460px;
+	margin-left:10px;
+}
+div.search {
+	color: #333333;
+	float: left;
+	font-weight: bold;
+	width: 160px;
+	margin-right: 5px;
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.spisok {
+	height: 23px;
+	width: 277px;
+	color: #666666;
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+.poiskpolosa .poiskcentr #button {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-image: url(../images/bg_knopka1.png);
+	background-repeat: repeat-x;
+	height: 31px;
+	padding-right: 30px;
+	padding-left: 30px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 8px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+}
+.poiskpolosa .poiskcentr #button:hover {
+	background-image: url(../images/bg_knopka2.png);
+}
+.content .podval {
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	padding: 16px;
+	margin-top: 20px;
+	color: #A43737;
+	border-radius:10px 10px 0 0;
+	-webkit-border-radius:10px 10px 0 0;
+	-moz-border-radius:10px 10px 0 0;
+}
+.apartment-title { font:16px Arial, sans-serif; float: left; margin-bottom: 4px;}
+
+div.apartment-description-item label { display: inline !important;}
+div.apartment-description-item ul { padding-top: 5px !important;}
+ul.apartment-description-ul {	color: #333399;	list-style-position: outside; list-style-type: square; padding-left: 17px; padding-top: 5px; }
+ul.apartment-description-ul li{ margin-top: 5px; }
+ul.apartment-description-ul li > span{ color: #000000;}
+
+div.apartment-title > a { text-decoration: none !important;}
+div.apartment-title > a:hover { text-decoration: underline !important; }
+
+div.appartment_box {width: 100%; overflow: hidden;}
+div.appartment_item {
+    width:461px;
+    float: left;
+    border:1px solid #ffece6;
+    margin: 3px;
+	font-size: 13px;
+	max-height: 140px;
+	min-height: 140px;
+	margin-left:11px;
+	overflow: hidden;
+}
+div.appartment_item:hover{
+	border:1px dashed #DB4D1A;
+}
+div.offer	{width:100%; padding-top:10px; margin:0;}
+div.offer-photo	{width:160px; float:left; padding-bottom:20px; margin-left:10px;}
+div.offer-text	{width:290px; float:left;}
+font.date	{font:11px/13px arial; color:#000;}
+.logo a	{text-decoration: none;}
+
+ul.header li a	{color:#339;}
+ul.header li a:hover	{color:#852432; text-decoration: underline;}
+ul.header	{list-style-type:none; margin:0; padding:0;}
+ul.header li	{display:inline; margin-right:25px;}
+
+a.offer		{font:16px/18px Arial, sans-serif; color: #A43737; }
+a.offer:hover	{font:16px/18px Arial, sans-serif;  color:#A43737; text-decoration: underline;}
+
+a.title		{font:16px Arial, sans-serif;  color:#339;}
+a.news:hover, a.title:hover	{font:16px Arial, sans-serif;  color:#852432; text-decoration: underline;}
+
+p.cost	{font:20px/18px arial, sans-serif; color:#000; margin:8px 0 0 0; padding:0 0 4px 0;}
+p.desc	{margin:4px 0 10px 0; padding:0;}
+
+div.breadcrumbs		{font:11px/13px arial; color:#000; padding-top: 5px;}
+div.breadcrumbs span	{font-weight:bold;}
+
+div.sorting { float:right;  margin: 2px 0 0 10px; }
+div.sorting a {font: 13px arial; height: 20px; padding: 3px 3px 2px 3px; }
+div.sorting a:hover  { color: #852432 !important; }
+div.sorting a.asc { background: url("../images/up.gif") no-repeat 98% 9px; padding-right: 13px;}
+div.sorting a.desc {background: url("../images/down.gif") no-repeat 98% 9px; padding-right: 13px;}
+
+.gmap-marker-img { padding: 5px; min-height: 73px; }
+.toggleGmap { color: #3B8CB2; cursor: pointer; font-weight: bold; padding: 2px 0 2px 20px;}
+
+a.btnsrch {
+	background: url(../images/pages/btn_left_bg.jpg) no-repeat;
+	float: right; display: block;
+	width: 145px;
+	height: 27px;
+	text-align: center;
+	padding: 3px 0 0 0;
+	margin: 0;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+a.btnsrch:hover{ text-decoration: none; font-size: 16px; color: #4F4840; }
+div.special_offer_highlight { background: url(../images/star_rubber.png) no-repeat #fff7f4  top right; }
+.viewapartment-main-photo { float: left; padding-top: 15px;margin: 0 15px 15px 0;}
+.viewapartment-no-photo {padding-left: 0px !important;}
+.viewapartment-description-top { 	padding: 15px 0 0 310px; }
+.viewapartment-description-top p {	margin-bottom: 2px !important;}
+.viewapartment-subheader { background: url("../images/design/active.gif") repeat-x scroll 0 0 transparent; color: #FFFFFF; font: 14px arial,sans-serif; height: 20px;margin: 0 2px;  padding: 3px 8px 2px; }
+
+.apartment-title { font:16px Arial, sans-serif; float: left; margin-bottom: 4px;}
+
+div.apartment-description-item label { display: inline !important;}
+div.apartment-description-item ul { padding-top: 5px !important;}
+ul.apartment-description-ul {	color: #333399;	list-style-position: outside; list-style-type: square; padding-left: 17px; padding-top: 5px; }
+ul.apartment-description-ul li{ margin-top: 5px; }
+ul.apartment-description-ul li > span{ color: #000000;}
+
+.comment {padding: 2px 10px; background: #ffffff; margin: 3px 0; border: 1px solid #DDEBFF;}
+.comment .body { margin: 10px 0; overflow:hidden;}
+.comment .name {	margin: 5px 0; padding: 0 0 3px; border-bottom: 1px solid #DDD;}
+.comment .date { color: #888; font-size: 0.8em; }
+
+.comment .pending { color:red;}
+#comments h3 { color: #000000 !important;}
+.padding-bottom10 { padding-bottom: 10px !important; }
+
+.noblock {display: inline !important; }
+.apartments_id_column { width: 40px; }
+.apartments_status_column { width: 45px;}
+div.column1 {}
+div.column2 { width: 460px; float: left;}
+div.column3 { width: 306px; float: left;}
