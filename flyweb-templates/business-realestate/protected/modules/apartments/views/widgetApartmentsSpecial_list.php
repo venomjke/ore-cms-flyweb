@@ -35,7 +35,7 @@ if($apartments){
                 $echo[] = '<span class="nobr">'.'Срок аренды: '.fetchRentTime($item).'</span>';
             }
             echo implode($echo,"<br/>");
-
+            unset($echo);
         ?>
 
     	</p>

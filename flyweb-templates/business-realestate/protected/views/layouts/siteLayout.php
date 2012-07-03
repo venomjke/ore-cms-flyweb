@@ -16,18 +16,23 @@
 </head>
 <body>
 <div class="shapka">
-	<div class="topmenu"><strong><?php echo param("adminPhone"); ?></strong> <a href="111">СВЯЗАТЬСЯ С НАМИ</a>
+  <div class="topmenu"><strong><?php echo param("adminPhone"); ?></strong> <a href="111">СВЯЗАТЬСЯ С НАМИ</a>
     <ul>
-      <li><a href="111">ДОБАВИТЬ ОБЪЯВЛЕНИЕ</a></li>
-      <li><a href="111">ЛИЧНЫЙ КАБИНЕТ</a></li>
-      <li><a href="111" style="border-left:none">ОСТАВИТЬ ЗАЯВКУ</a></li>
+      <li><a class="fancy" href="<?php echo Yii::app()->request->baseUrl; ?>/booking/main/mainform">ОСТАВИТЬ ЗАЯВКУ</a></li>
     </ul>
   </div>
   <div class="clear"></div>
   <a href="<?php echo Yii::app()->request->hostInfo; ?>">
     <img class="logo" src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo.png" />
   </a>
-  <span class="slogan">Слоган компании, типа «Вся недвижимость Петербурга»</span>
+  <div style="overflow:auto;float:right;margin-top:25px;">
+    <div style="overflow:auto;">
+       <div class="share42init" style="float:right;"></div>
+         <script type="text/javascript" src="share42/share42.js"></script>
+    <script type="text/javascript">share42('share42/',150,20)</script>
+    </div>  
+   <span class="slogan">Слоган компании, типа «Вся недвижимость Петербурга»</span>
+  </div>
   <div class="clear"></div>
   <div class="menu">
     <?php
@@ -37,21 +42,18 @@
             'htmlOptions' => array('class' => 'dropDownNav'),
           ));
       ?>
-  <div class="share42init"></div>
-  <script type="text/javascript" src="share42/share42.js"></script>
-  <script type="text/javascript">share42('share42/',150,20)</script>
   </div>
 </div>
 <div class="clear"></div>
 <div class="poiskpolosa">
-	<div class="poiskcentr">
+  <div class="poiskcentr">
           <?php $this->renderPartial("//site/slider"); ?>
           <?php $this->renderPartial("//site/index-search-form"); ?>
     </div>
 </div>
 <div class="centr">
-	<div class="leftstolb">
-   	  <?php $this->renderPartial("//site//realestate-news"); ?>
+  <div class="leftstolb">
+      <?php $this->renderPartial("//site//realestate-news"); ?>
       <?php $this->renderPartial("//site//realestate-special"); ?>   
   </div>
   <div class="content main-content-wrapper">
