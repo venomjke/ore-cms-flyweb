@@ -34,8 +34,7 @@
 				
                 if(!isset($adminView)){
 					?>
-						<b> Адрес: </b> <?php echo param("adminAddress"); ?> <br/>
-						<b> Телефон: </b> <?php echo param("adminPhone"); ?> 
+						<img src="<?php echo Yii::app()->request->hostInfo; ?>/images/numb5.png" />
 					<?php
 					/*
                     $this->widget('zii.widgets.CMenu',array(
