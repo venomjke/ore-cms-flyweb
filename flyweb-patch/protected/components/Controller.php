@@ -58,6 +58,11 @@ class Controller extends CController {
 					'title' => Yii::t('module_apartments', 'Manage apartments')
 				),
 			),
+			array(
+				'label' => '<img src="'.Yii::app()->request->baseUrl.'/images/adminmenu/manage_slider.png" />', 
+				'url' => array('/slider/backend/main/admin'), 
+				'linkOptions' => array('class' => 'adminMainNavItem', 'title' => 'Управление слайдером')
+			),
 
 			array(
 				'label' => '<img src="'.Yii::app()->request->baseUrl.'/images/adminmenu/manage_comments.png" />',
@@ -123,11 +128,6 @@ class Controller extends CController {
 				'label' => '<img src="'.Yii::app()->request->baseUrl.'/images/adminmenu/manage_settings.png" />', 
 				'url' => array('/configuration/backend/main/admin'), 
 				'linkOptions' => array('class' => 'adminMainNavItem', 'title' => Yii::t('module_configuration', 'Settings'))
-			),
-			array(
-				'label' => '<img src="'.Yii::app()->request->baseUrl.'/images/adminmenu/manage_slider.png" />', 
-				'url' => array('/slider/backend/main/admin'), 
-				'linkOptions' => array('class' => 'adminMainNavItem', 'title' => 'Управление слайдером')
 			)
 			/*,
 			array(
