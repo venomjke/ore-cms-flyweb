@@ -41,48 +41,6 @@ if($model->is_free_to == '0000-00-00'){
 	<?php echo $form->error($model,'is_special_offer'); ?>
 </div>
 
-<div class="row special-calendar">
-	<?php echo $form->labelEx($model,'is_free_from', array('class' => 'noblock')); ?> /
-	<?php echo $form->labelEx($model,'is_free_to', array('class' => 'noblock')); ?><br />
-	<?php
-		$this->widget('application.extensions.FJuiDatePicker', array(
-			'model'=>$model,
-			'attribute'=>'is_free_from',
-			'range' => 'eval_period',
-			'language' => Yii::app()->language,
-
-			'options'=>array(
-				'showAnim'=>'fold',
-				'dateFormat'=>'yy-mm-dd',
-				'minDate'=>'new Date()',
-			),
-			'htmlOptions'=>array(
-				'class' => 'width70 eval_period'
-			),
-		));
-	?>
-	/
-	<?php
-		$this->widget('application.extensions.FJuiDatePicker', array(
-			'model'=>$model,
-			'attribute'=>'is_free_to',
-			'range' => 'eval_period',
-			'language' => Yii::app()->language,
-
-			'options'=>array(
-				'showAnim'=>'fold',
-				'dateFormat'=>'yy-mm-dd',
-				'minDate'=>'new Date()',
-			),
-			'htmlOptions'=>array(
-				'class' => 'width70 eval_period'
-			),
-		));
-	?>
-	<?php echo $form->error($model,'is_free_from'); ?>
-	<?php echo $form->error($model,'is_free_to'); ?>
-</div>
-
 <div class="row">
 	<?php echo $form->labelEx($model,'price_from_rur'); ?>
 	<?php echo $form->textField($model,'price_from_rur', array('class' => 'width50')); ?>
@@ -121,12 +79,6 @@ if($model->is_free_to == '0000-00-00'){
 	<?php echo $form->labelEx($model,'square'); ?>
 	<?php echo $form->textField($model,'square', array('size' => 10)); ?>
 	<?php echo $form->error($model,'square'); ?>
-</div>
-
-<div class="row">
-	<?php echo $form->labelEx($model,'window_to'); ?>
-	<?php echo $form->dropDownList($model,'window_to', WindowTo::getWindowTo(), array('class' => 'width150')); ?>
-	<?php echo $form->error($model,'window_to'); ?>
 </div>
 
 <?php if (issetModule('metrostations')) { ?>
