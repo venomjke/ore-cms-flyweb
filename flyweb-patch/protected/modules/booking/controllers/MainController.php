@@ -44,7 +44,7 @@ class MainController extends ModuleUserController{
 
 			if($booking->validate()){
 				Yii::app()->user->setFlash('success', tt('Operation successfully complete. Please check your email for further instructions.'));
-				$emailText = 'Квартира: <a href="'.$apartment->getUrl().'">'.$apartment->getStrByLang('title').'</a> <br/>';
+				$emailText = 'Квартира: <a href="'.Yii::app()->request->hostInfo."".$apartment->getUrl().'">'.$apartment->getStrByLang('title').'</a> <br/>';
 				$emailText .= 'Имя: '.$booking->username.'<br/>';
 				$emailText .= 'Номер телефона: '.$booking->phone.'<br/>';
 				$emailText .= 'Email: '.$booking->useremail.'<br/>';
