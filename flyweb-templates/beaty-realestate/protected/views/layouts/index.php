@@ -10,11 +10,13 @@
   <div class="filtr">
 	 		 <?php $this->renderPartial("//site/index-search-form"); ?>
 	        <div class="clear"></div>
-    </div>       
-    <?php
-        Yii::import('application.modules.apartments.components.*');
-        $this->widget("ApartmentsWidget");
-    ?>
+    </div>
+    <div class="main-content-wrapper">       
+      <?php
+          Yii::import('application.modules.apartments.components.*');
+          $this->widget("ApartmentsWidget");
+      ?>
+    </div>
   <div class="podval">&copy; 2009 Названиефирмы.ru  - Недвижимость в Санкт Петербурге<br />
     т.:  <strong>+7 (123)</strong> <strong style="font-size:18px">123 45 67</strong><br />
     г. Санкт Петербург, ул Такая-то 43-18<br />
