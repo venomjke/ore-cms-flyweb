@@ -463,3 +463,4 @@ div.form .errorSummary ul
 .slider-wrapper{
   overflow:hidden;
 }
+.admin-menu-small {  position: fixed;top: 10px; width: 50px; padding: 0px 10px 15px 10px; }

@@ -105,5 +105,20 @@
         });
     ', CClientScript::POS_READY);
     ?>
+     <?php if(Yii::app()->user->getState('isAdmin')){  
+    
+      Yii::app()->clientScript->registerScriptFile(Yii::app()->request->baseUrl.'/js/tooltip/jquery.tipTip.minified.js', CClientScript::POS_END);
+      Yii::app()->clientScript->registerScript('adminMenuToolTip', '
+        $(function(){
+          $(".adminMainNavItem").tipTip({maxWidth: "auto", edgeOffset: 10, delay: 200});
+        });
+      ', CClientScript::POS_READY);
+    ?>
+      <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/tooltip/tipTip.css" />
+
+      <div class="admin-menu-small" onclick="location.href='<?php echo Yii::app()->request->baseUrl; ?>/apartments/backend/main/admin'" style="cursor: pointer;">
+        <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/adminmenu/administrator.png" alt="<?php echo Yii::t('common','Administration'); ?>" title="<?php echo Yii::t('common','Administration'); ?>" class="adminMainNavItem" />    
+      </div>
+    <?php } ?>
       </body>
 </html>
