@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="shapka">
-  <div class="topmenu"><strong><?php echo param("adminPhone"); ?></strong> <a href="111">СВЯЗАТЬСЯ С НАМИ</a>
+  <div class="topmenu"><strong><?php echo param("adminPhone"); ?></strong> 
     <ul>
       <li><a class="fancy" href="<?php echo Yii::app()->request->baseUrl; ?>/booking/main/mainform">ОСТАВИТЬ ЗАЯВКУ</a></li>
     </ul>
