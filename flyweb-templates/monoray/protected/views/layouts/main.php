@@ -34,8 +34,7 @@
 				
                 if(!isset($adminView)){
 					?>
-						<b> Адрес: </b> <?php echo param("adminAddress"); ?> <br/>
-						<b> Телефон: </b> <?php echo param("adminPhone"); ?> 
+					<img src="/images/numb5.png" />
 					<?php
 					/*
                     $this->widget('zii.widgets.CMenu',array(
@@ -66,7 +65,7 @@
 					*/
 					$this->widget('zii.widgets.CMenu',array(
 						'id' => 'dropDownNav',
-						'items'=>array_merge($this->aData['topMenuItems'],array(array('label'=>'Оставить заявку','url'=> array('/booking/main/mainform'), 'linkOptions'=>array('class'=>'fancy') ))),
+						'items'=>array_merge($this->aData['topMenuItems'],array(array('label'=>'РћСЃС‚Р°РІРёС‚СЊ Р·Р°СЏРІРєСѓ','url'=> array('/booking/main/mainform'), 'linkOptions'=>array('class'=>'fancy') ))),
 						'htmlOptions' => array('class' => 'dropDownNav'),
 					));
 				?>
