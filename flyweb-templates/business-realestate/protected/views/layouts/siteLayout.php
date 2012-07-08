@@ -70,7 +70,7 @@ $str .= "<a href=\"".$linkItem['url'][0]."\">".$linkItem['label']."</a> | ";
 echo rtrim($str,"| ");
 ?>
 </div>
-<div class="footer" style="text-align:center;color: #666;font-size: 12px;">
+<div class="footer" style="> 
       &copy;&nbsp;<?php echo param('siteName_'.Yii::app()->language).', '.date('Y'); ?>
 </div>
 <div id="loading" style="display:none;"><?php echo Yii::t('common', 'Loading content...'); ?></div>
