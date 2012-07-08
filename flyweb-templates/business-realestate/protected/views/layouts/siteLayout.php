@@ -62,7 +62,6 @@
 </div>
 <div class="clear" style="height:2px; background-color:#084767;"></div>
 <div class="podval">
-<a href="/Связаться-с-нами-15.htm">Контакты</a>  |   <a href="/news/main/index">Новости</a>
 </div>
 <div class="footer">
       <p class="slogan">&copy;&nbsp;<?php echo param('siteName_'.Yii::app()->language).', '.date('Y'); ?></p>
