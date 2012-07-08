@@ -176,12 +176,7 @@
 					echo '<ul class="apartment-description-ul">';
 					foreach($item['values'] as $key => $value){
 						if($value){							
-							if (param('useReferenceLinkInView')) {
-								echo '<li><span>'.CHtml::link(CHtml::encode($value), $this->createAbsoluteUrl('/service-'.$key)).'</span></li>';
-							}
-							else {
-								echo '<li><span>'.CHtml::encode($value).'</span></li>';
-							}
+							echo '<li><span>'.CHtml::encode($value).'</span></li>';
 						}
 					}
 					echo '</ul>';
