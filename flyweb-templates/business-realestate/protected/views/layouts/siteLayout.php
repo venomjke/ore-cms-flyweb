@@ -62,7 +62,8 @@
 </div>
 <div class="clear" style="height:2px; background-color:#084767;"></div>
 <div class="podval">
-<a href="111">Контакты</a>  |   <a href="111">Карта сайта</a>  |   <a href="111">О нас</a>  |   О<a href="111">братная связь</a>  |   <a href="111">Правила пользования</a>  |   <a href="111">Политика конфиденциальности</a>  |   <a href="111">Новости</a>  |   <a href="111">Вакансии</a>  |   <a href="111">Каталог объектов</a>  |   <a href="111">Поиск</a>  |   <a href="111">Добавить объявление</a>  |   <a href="111">Оставить заявку</a>  |<a href="111"> Личный кабинет</a>  |   <a href="111">Архив</a></div>
+<a href="/Связаться-с-нами-15.htm">Контакты</a>  |   <a href="/news/main/index">Новости</a>
+</div>
 <div class="footer">
       <p class="slogan">&copy;&nbsp;<?php echo param('siteName_'.Yii::app()->language).', '.date('Y'); ?></p>
     </div>

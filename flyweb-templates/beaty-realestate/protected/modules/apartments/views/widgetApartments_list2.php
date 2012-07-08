@@ -1,3 +1,17 @@
+<?php
+	if($sorterLinks){
+		foreach($sorterLinks as $link){
+			echo '<div class="sorting">'.$link.'</div>';
+		}
+	}
+?>
+
+<h2>
+	<?php
+		echo Yii::t('module_apartments', 'Apartments list').(isset($count) && $count ? ' ('.$count.')' : '');
+	?>
+</h2>
+
 <div class="appartment_box" id="appartment_box">
 <?php
 if($apartments){

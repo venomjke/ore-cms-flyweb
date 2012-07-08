@@ -4,7 +4,7 @@
 
 .price-search-select { width: 190px; float: left; position: relative; top: 10px; }
 
-.vals .left {color: #FFFFFF; float: left; font-size: 12px;}
-.vals .right {color: #FFFFFF; float: right; font-size: 12px;}
+.vals .left {color: #333; float: left; font-size: 12px;}
+.vals .right {color: #333; float: right; font-size: 12px;}
 
-.slider-price-currency {float: right; color: #FFFFFF; position: relative; top: 3px; right: 18px;}
+.slider-price-currency {float: right; color: #333; position: relative; top: 3px; right: 18px;}

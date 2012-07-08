@@ -393,3 +393,14 @@ a.btnsrch {
 }
 
 a.btnsrch:hover{ text-decoration: none; font-size: 16px; color: #4F4840; }
+
+.news-items .title{
+	font-weight:bold;
+}
+.sorting{
+	float:right;
+	margin-left:10px;
+}
+.sorting a{
+	color:#333;
+}
