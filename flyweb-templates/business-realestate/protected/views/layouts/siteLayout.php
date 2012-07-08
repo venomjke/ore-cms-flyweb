@@ -62,6 +62,13 @@
 </div>
 <div class="clear" style="height:2px; background-color:#084767;"></div>
 <div class="podval">
+<?php
+$str = "";
+foreach($this->aData['topMenuItems'] as $linkItem){
+$str .= "<a href=\"".$linkItem['url'][0]."\">".$linkItem['label']."</a> | ";
+}
+echo rtrim($str,"| ");
+?>
 </div>
 <div class="footer">
       <p class="slogan">&copy;&nbsp;<?php echo param('siteName_'.Yii::app()->language).', '.date('Y'); ?></p>
