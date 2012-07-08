@@ -12,8 +12,9 @@ if($apartments){
         }
 		?>
         <a class="anons" href="<?php echo $item->getUrl(); ?>"><?php echo $tagImg; ?>        
-  		<p><span class="offer"><?php truncateText($item->title,4); ?></span>
-        <span class="prise"><?php $item->getPrettyPrice(); ?></span>
+  		<p>
+            <span class="offer"><?php echo truncateText($item->getStrByLang('title'),4); ?></span>
+            <span class="prise"><?php echo $item->getPrettyPrice(); ?></span>
 
         <?php if($item->square): ?>
 	        Общая площадь <?php echo $item->square; ?> м2<br />
